@@ -1,3 +1,12 @@
 spring:
   thymeleaf:
+    prefix: classpath:templates/
+    check-template-location: true
+    suffix: .html
+    mode: HTML5
     cache: false
+  messages:
+    basename: messages
+  web:
+    resources:
+      static-locations: classpath:/static/
